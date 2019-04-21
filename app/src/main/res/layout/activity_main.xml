@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgray"
+    tools:context=".views.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/log_out"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/exit_black" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="4dp"
+            android:layout_toEndOf="@+id/log_out"
+            android:gravity="center"
+            android:minWidth="120dp"
+            android:padding="4dp"
+            android:text=""
+            android:textColor="#000"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="230dp"
+            android:layout_height="110dp"
+            android:layout_below="@+id/username"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/bconnectlogo2" />
+
+        <LinearLayout
+            android:id="@+id/linear_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/not_visit"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bluebtn"
+                android:padding="4dp"
+                android:text="On Hold"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/history"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bluebtn"
+                android:padding="4dp"
+                android:text="Visits"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/all_pharmacies"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bluebtn"
+                android:padding="4dp"
+                android:text="All Pharmacies"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

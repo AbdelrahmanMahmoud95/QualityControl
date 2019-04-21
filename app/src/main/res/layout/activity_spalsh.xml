@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backblue"
+    tools:context=".views.SplashActivity">
+
+    <ImageView
+        android:id="@+id/LogoImage"
+        android:layout_width="wrap_content"
+        android:layout_height="95dp"
+        android:layout_marginTop="180dp"
+        app:srcCompat="@drawable/bconnectlogo" />
+
+    <ImageView
+        android:id="@+id/quality"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@+id/LogoImage"
+        app:srcCompat="@drawable/qualityassurance" />
+
+    <ProgressBar
+        android:id="@+id/welcome_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_below="@+id/quality"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="50sp"
+        android:gravity="center_vertical"
+        android:requiresFadingEdge="none|horizontal"
+        android:scaleType="center"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+</RelativeLayout>

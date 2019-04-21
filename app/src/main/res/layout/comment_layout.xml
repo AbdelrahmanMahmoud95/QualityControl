@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F0EEEE">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="اكتب تقريرك"
+            android:minHeight="100dp"
+            android:padding="6dp"
+            android:textColor="@color/applicationColor"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@+id/comment"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bluebtn"
+            android:text="تم"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</ScrollView>
+
+

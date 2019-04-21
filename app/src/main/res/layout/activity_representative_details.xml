@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgray"
+    tools:context=".views.RepresentativeDetailsActivity">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_margin="3dp"
+        android:background="@drawable/bluebtn"
+        android:gravity="center"
+        android:text="Quality User"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+    <ScrollView
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/relative_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <com.github.mikephil.charting.charts.BarChart
+                    android:id="@+id/chart1"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:layout_margin="3dp"
+                    android:background="#9DCBE2" />
+
+                <TextView
+                    android:id="@+id/ph_count"
+                    android:layout_width="65dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/round_corner"
+                    android:gravity="center"
+                    android:text="0 ph"
+                    android:textColor="#fff"
+                    android:textSize="17sp"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+            <!--https://github.com/GastricSpark/ScrollDatePicker-->
+            <com.harrywhewell.scrolldatepicker.DayScrollDatePicker
+                android:id="@+id/day_date_picker"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/relative_container"
+                android:layout_margin="3dp"
+                android:background="#3F51B5"
+                app:baseColor="#0E24A0"
+                app:baseTextColor="#fff"
+                app:selectedColor="#F3F5F7"
+                app:selectedTextColor="#103988"
+                app:showFullDate="false"
+                app:showTitle="true" />
+
+            <TextView
+                android:id="@+id/total_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/day_date_picker"
+                android:layout_alignTop="@+id/circularProgressbar"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="45dp"
+                android:gravity="center"
+                android:text="Total Not Visit"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <ProgressBar
+                android:id="@+id/circularProgressbar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_below="@+id/day_date_picker"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="2dp"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/progress_circle"
+                android:secondaryProgress="100" />
+
+            <TextView
+                android:id="@+id/total_visit_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/circularProgressbar"
+                android:layout_alignTop="@+id/circularProgressbar"
+                android:layout_alignEnd="@+id/circularProgressbar"
+                android:layout_alignBottom="@+id/circularProgressbar"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/visit_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/day_date_picker"
+                android:layout_alignTop="@+id/circularProgressbar1"
+                android:layout_marginStart="48dp"
+                android:gravity="center"
+                android:text="Total Visit"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <ProgressBar
+                android:id="@+id/circularProgressbar1"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_below="@+id/day_date_picker"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="2dp"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/progress_circle"
+                android:secondaryProgress="100" />
+
+            <TextView
+                android:id="@+id/visit_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/circularProgressbar1"
+                android:layout_alignTop="@+id/circularProgressbar1"
+                android:layout_alignEnd="@+id/circularProgressbar1"
+                android:layout_alignBottom="@+id/circularProgressbar1"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/visit"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_below="@+id/circularProgressbar"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bluebtn"
+                android:gravity="center"
+                android:padding="6dp"
+                android:text="Visit"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="22sp" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

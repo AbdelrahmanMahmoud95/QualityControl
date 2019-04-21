@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bconnect_egypt.qualitycontrol2">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.ACCESS_ASSISTED_GPS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/bclogowt"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <meta-data
+            android:name="firebase_analytics_collection_deactivated"
+            android:value="true" />
+
+        <meta-data
+            android:name="google_analytics_adid_collection_enabled"
+            android:value="false" />
+
+        <activity
+            android:name="com.bconnect_egypt.qualitycontrol2.views.VisitByDateActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.bconnect_egypt.qualitycontrol2.views.ChooseVisitTypActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.bconnect_egypt.qualitycontrol2.views.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.bconnect_egypt.qualitycontrol2.views.BranchActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.bconnect_egypt.qualitycontrol2.views.ContractActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name="com.bconnect_egypt.qualitycontrol2.views.RepresentativeDetailsActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity
+            android:name="com.bconnect_egypt.qualitycontrol2.views.AdminActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.bconnect_egypt.qualitycontrol2.views.HistoryActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.bconnect_egypt.qualitycontrol2.views.PharmaciesActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.bconnect_egypt.qualitycontrol2.views.PharmacyDetailsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.bconnect_egypt.qualitycontrol2.views.PharmaciesNotVisitActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.bconnect_egypt.qualitycontrol2.views.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.bconnect_egypt.qualitycontrol2.views.SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="2dp"
+    android:background="@drawable/backgray"
+    tools:context=".views.ChooseVisitTypActivity">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/bluebtn"
+        android:gravity="center"
+        android:text="Choose Your Visit Typ"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:gravity="center"
+        android:padding="30dp"
+        android:text="Choose Your Report"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/linear_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/visit_by_date"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bluebtn"
+            android:padding="4dp"
+            android:text="Visits By Date"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/visit_by_branch"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bluebtn"
+            android:padding="4dp"
+            android:text="Visits By Branch"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+
+
+        <Button
+            android:id="@+id/all_visits"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bluebtn"
+            android:padding="4dp"
+            android:text="All Visits"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+    </LinearLayout>
+</RelativeLayout>
